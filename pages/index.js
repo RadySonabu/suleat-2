@@ -29,7 +29,7 @@ const Home = () => {
       <SectionTitle
         pretitle="Suleat Benefits"
         title=" Why should you use this landing page">
-        Suleat is a platform to share food experience.
+        Suleat is a platform to share food experience. Making everybite suleat
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
