@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Suleat - Changing how you consume food.</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Suleat - Changing how you consume food."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,11 +27,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
+        pretitle="Suleat Benefits"
         title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Suleat is a platform to share food experience.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
