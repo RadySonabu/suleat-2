@@ -21,14 +21,14 @@ const Home = () => {
           name="description"
           content="Suleat - Changing how you consume food."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/suleat.png" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
         pretitle="Suleat Benefits"
-        title=" Why should you use this landing page">
+        title=" Why should you use this Suleat">
         Suleat is a platform to share food experience. Making everybite suleat
       </SectionTitle>
       <Benefits data={benefitOne} />
