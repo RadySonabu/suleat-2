@@ -27,12 +27,12 @@ export default function Footer() {
                       height="32"
                       className="w-8"
                     />
-                  <span>Suleat</span>
+                  <span className="text-center"><div className="font-bold">Suleat</div> <div className="text-xs">Super Food</div></span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Suleat is a free food sharing platform.
+              {/* Suleat is a free food sharing platform. */}
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        {/* <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a
             href="https://web3templates.com/"
@@ -104,7 +104,7 @@ export default function Footer() {
             rel="noopener ">
             Glazestock
           </a>
-        </div>
+        </div> */}
       </Container>
       {/* Do not remove this */}
     </div>

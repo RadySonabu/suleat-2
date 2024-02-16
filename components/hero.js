@@ -9,10 +9,10 @@ const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Changing how we consume meals.
+              Empowering every Filipino kitchen
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Suleat is an online platform that leverages the power of machine learning to connect buyers with cooks. 
+            Suleat Super Food is an online platform that leverages the power of AI to connect buyers with cooks. 
             Essentially, the platform acts as a marketplace where buyers can browse through the profiles of recommended
              cooks & foods and order meals that suit their flavor profile
             </p>
@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
         </div>
       </Container>
-      <Container>
+      {/* <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted by <span className="text-orange-600">2000+</span>{" "}
@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 }
