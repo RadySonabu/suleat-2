@@ -18,7 +18,7 @@ const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
-                href="/register/cook"
+                href="/sign-up"
                 
                 className="px-8 py-4 text-lg font-medium text-center w-full text-white bg-orange-600 rounded-md hover:bg-orange-700 ">
                 Sign up as a Cook

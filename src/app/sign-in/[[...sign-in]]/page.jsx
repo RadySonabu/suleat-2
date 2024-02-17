@@ -4,7 +4,7 @@ const SignInPage = () => {
   return (
     <>
       <div className="flex justify-evenly h-screen">
-        <div class="m-auto">
+        <div className="m-auto">
           <SignIn />
         </div>
       </div>
