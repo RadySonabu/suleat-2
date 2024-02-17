@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,20 +13,23 @@ const Hero = () => {
               Empowering every Filipino kitchen
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Suleat Super Food is an online platform that leverages the power of AI to connect buyers with cooks. 
-            Essentially, the platform acts as a marketplace where buyers can browse through the profiles of recommended
-             cooks & foods and order meals that suit their flavor profile
+            Suleat Super Food is an online platform that leverages the power of AI to connect buyers with home cooks. 
+            
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
-                target="_blank"
-                rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-orange-600 rounded-md ">
-                Sign up to our Newsletter
-              </a>
-              
+              <Link
+                href="/register/cook"
+                
+                className="px-8 py-4 text-lg font-medium text-center w-full text-white bg-orange-600 rounded-md hover:bg-orange-700 ">
+                Sign up as a Cook
+              </Link>
+              {/* <Link
+                href="/register/buyer"
+                
+                className="px-8 py-4 text-lg font-medium text-center text-orange-600 border-orange-600 border-solid border-2 rounded-md ">
+                Sign up as a Buyer
+              </Link> */}
             </div>
           </div>
         </div>

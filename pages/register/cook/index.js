@@ -1,10 +1,12 @@
 import React from 'react'
-import Head from "next/head";
+import Login from '../../../components/Register'
+import Navbar from '../../../components/navbar'
+import Head from 'next/head'
+import Container from '../../../components/container'
 
-import Navbar from '../../components/navbar'
-export default function index() {
+function index() {
   return (
-    <div>
+    <>
         <Head>
         <title>Suleat - Changing how you consume food.</title>
         <meta
@@ -13,8 +15,10 @@ export default function index() {
         />
         <link rel="icon" href="/img/suleat.png" />
       </Head>
-
-      <Navbar />
-    </div>
+        <Navbar/>
+        <Login/>
+    </>
   )
 }
+
+export default index

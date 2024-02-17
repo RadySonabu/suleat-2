@@ -5,8 +5,7 @@ import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
   const navigation = [
-    "About Us",
-    "Future Projects"
+    
   ];
 
   return (
@@ -32,7 +31,7 @@ const Navbar = () => {
                   </span>
                 </Link>
 
-                <Disclosure.Button
+                {/* <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-orange-500 focus:text-orange-500 focus:bg-orange-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
                   <svg
@@ -53,9 +52,9 @@ const Navbar = () => {
                       />
                     )}
                   </svg>
-                </Disclosure.Button>
+                </Disclosure.Button> */}
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                {/* <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     <Link href="/about-us" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-orange-500 focus:text-orange-500 focus:bg-orange-100 dark:focus:bg-gray-800 focus:outline-none">
                           About Us
@@ -64,10 +63,10 @@ const Navbar = () => {
                           Projects
                     </Link>
                     <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-orange-600 rounded-md lg:ml-5">         
-                        Get Started
+                        Sign Up
                     </Link>
                   </>
-                </Disclosure.Panel>
+                </Disclosure.Panel> */}
               </div>
             </>
           )}
@@ -77,20 +76,20 @@ const Navbar = () => {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
               <li className="mr-3 nav__item">
-                <Link href="/about-us" className="inline-block px-4 py-2 text-lg font-bold text-gray-600 no-underline rounded-md dark:text-gray-200 hover:text-orange-500 focus:text-orange-500 focus:bg-orange-100 focus:outline-none dark:focus:bg-gray-800">
+                {/* <Link href="/about-us" className="inline-block px-4 py-2 text-lg font-bold text-gray-600 no-underline rounded-md dark:text-gray-200 hover:text-orange-500 focus:text-orange-500 focus:bg-orange-100 focus:outline-none dark:focus:bg-gray-800">
                     About Us
                 </Link>
                 <Link href="/projects" className="inline-block px-4 py-2 text-lg font-bold text-gray-600 no-underline rounded-md dark:text-gray-200 hover:text-orange-500 focus:text-orange-500 focus:bg-orange-100 focus:outline-none dark:focus:bg-gray-800">
                     Projects
-                </Link>
+                </Link> */}
               </li>
           </ul>
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-orange-600 rounded-md md:ml-5">
-              Get Started
-          </Link>
+          {/* <Link href="/" className="px-6 py-2 text-white bg-orange-600 rounded-md md:ml-5">
+              Sign Up
+          </Link> */}
 
           <ThemeChanger />
         </div>

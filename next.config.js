@@ -4,4 +4,7 @@ module.exports = {
     defaultLocale: "en",
   },
   output: "standalone",
+  images: {
+    domains: ['docs.material-tailwind.com', 'www.facebook.com'],
+  },
 };
