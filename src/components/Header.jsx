@@ -30,10 +30,20 @@ export default function Header({ userId }) {
     <header className="bg-white  backdrop-blur-3xl ">
       <nav className="z-99 mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link  href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Image width={300} height={300} className="h-8 w-auto" src="https://2023-lamba-bucket.s3.ap-southeast-1.amazonaws.com/Group+39.png" alt="" />
-          </Link >
+          <Link href="/">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-orange-500 dark:text-gray-100">
+                    <span>
+                    <Image
+                        src="/suleat-svg.svg"
+                        alt="N"
+                        width="32"
+                        height="32"
+                        className="w-8"
+                    />
+                    </span>
+                    <span className="text-center text-orange-600"><div className="font-bold">Suleat</div> <div className="text-xs">Super Food</div></span>
+                </span>
+            </Link>
         </div>
         {!userId ? (
         <>
