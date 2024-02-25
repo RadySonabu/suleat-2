@@ -4,24 +4,21 @@ import { UserButton, auth } from '@clerk/nextjs';
 import Container from './Container';
 
 
-const stats = [
-  { id: 1, name: 'Charm', value: 'I' },
-  { id: 2, name: 'Madonna', value: 'Love' },
-  { id: 3, name: 'Lea', value: 'You' },
-]
 
 const DashboardPage = () => {
     const { userId } = auth();
   return (
     <>
 
-      <Header userId={userId}/>
+      <div className='sticky top-0 w-full z-10'><Header userId={userId}/></div>
+      <div className='md:mt-0 z-0'>
       <Container>
-        <div className='h-[calc(100vh-200px)]  items-center justify-center px-80 py-20 space-x-10 space-y-10'>
-          <div className='text-8xl font-bold'>Thank you for your pre-registration!</div>
-          <div className='text-5xl font-bold'>Our team will contact you soon.</div>
+        <div className=' items-center justify-center text-center md:h-screen md:flex md:flex-col '>
+          <div className='text-2xl font-bold md:text-8xl'>Thank you for pre-registrating!</div>
+          <div className='text-1xl font-bold md:text-5xl'>Our team will contact you soon regarding the features that we are offering.</div>
         </div>
       </Container>
+      </div>
     </>
   )
 }
