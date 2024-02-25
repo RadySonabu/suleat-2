@@ -11,7 +11,7 @@ const DashboardPage = () => {
     <>
 
       <div className='sticky top-0 w-full z-10'><Header userId={userId}/></div>
-      <div className='md:mt-20 pt-20'>
+      <div className='md:mt-0 z-0'>
       <Container>
         <div className=' items-center justify-center text-center md:h-screen md:flex md:flex-col '>
           <div className='text-2xl font-bold md:text-8xl'>Thank you for pre-registrating!</div>
