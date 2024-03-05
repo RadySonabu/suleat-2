@@ -1,13 +1,19 @@
+'use client'
 import React from 'react'
-import { UserButton } from "@clerk/nextjs";
+import { UserButton, auth } from "@clerk/nextjs";
+import Header from '@/components/Header';
+import Container from '@/components/Container';
+import Chart from '@/components/ProfilePage/chart';
 
-export default function Profile() {
+const Profile = () =>  {
   return (
     <div>
-        <div>
-            <UserButton afterSignOutUrl="/"/>
-        </div>
-        page of profile
+        <Header/>
+        <Container>
+          Flavor Profile
+          <Chart/>
+        </Container>
     </div>
   )
 }
+export default Profile
