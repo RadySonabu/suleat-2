@@ -1,4 +1,3 @@
-import ContactUs from '@/components/ContactUs'
 import Header from '@/components/Header'
 import React from 'react'
 
@@ -9,7 +8,6 @@ const ContactUsPage = () => {
         <Header/>
 
       </div>
-      <ContactUs/>
     </div>
   )
 }

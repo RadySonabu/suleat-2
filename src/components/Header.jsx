@@ -11,7 +11,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { UserButton } from '@clerk/nextjs';
+import { UserButton, auth } from '@clerk/nextjs';
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -22,10 +22,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ userId }) {
+export default function Header() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const userId = true;
   return (
     <header className="bg-white  backdrop-blur-3xl ">
       <nav className="z-99 mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -101,7 +101,11 @@ export default function Header({ userId }) {
                 </Link>
             </div>
         </>
-            ) : <UserButton/> }
+            ) : <UserButton 
+            showName='true' 
+            userProfileMode='navigation'
+            userProfileUrl='/profile'
+            /> }
     
         
       </nav>
