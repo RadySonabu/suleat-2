@@ -3,12 +3,14 @@ import DashboardPage from "@/components/DashboardPage";
 import LandingPage from "@/components/LandingPage";
 import { UserButton, auth, currentUser } from '@clerk/nextjs';
 
-const Example = () => {
-  const user = auth()
-  console.log(user.userId)
+const Example = async () => {
+  const user = await auth()
+  console.log(user.userId ? 'yes' : 'no')
+
+
   return (
     <>
-    {user ? <DashboardPage/> : <LandingPage/>}
+    {user.userId ? <DashboardPage/> : <LandingPage/>}
     </>
     
 
