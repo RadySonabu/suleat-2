@@ -5,7 +5,6 @@ import { UserButton, auth, currentUser } from '@clerk/nextjs';
 
 const Example = async () => {
   const user = await auth()
-  console.log(user.userId ? 'yes' : 'no')
 
 
   return (

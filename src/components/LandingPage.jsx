@@ -1,5 +1,7 @@
 
 'use client'
+import Card from './Card';
+import Footer from './Footer';
 import Header from './Header'
 import Hero from './LandingPage/Hero'
 import Navbar from './LandingPage/Navbar'
@@ -13,6 +15,8 @@ const LandingPage = () => {
     <div className='mx-auto'>
       <Navbar/>
       <Hero />
+      <Card/>
+      <Footer/>
     </div>
   )
 }

@@ -15,6 +15,11 @@ module.exports = {
           hostname: 'tailus.io',
           pathname: '**',
         },
+        {
+          protocol: 'https',
+          hostname: 't4.ftcdn.net',
+          pathname: '**',
+        },
       ],
     },
   }
