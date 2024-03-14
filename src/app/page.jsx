@@ -1,18 +1,16 @@
-
+"use server"
 import DashboardPage from "@/components/DashboardPage";
 import LandingPage from "@/components/LandingPage";
-import { UserButton, auth } from '@clerk/nextjs';
+import { UserButton, auth, currentUser } from '@clerk/nextjs';
 
-const Example = () => {
-  const { userId } = auth();
+const Example = async () => {
+  const user = await auth()
+  console.log(user.userId ? 'yes' : 'no')
+
 
   return (
     <>
-      {!userId ? 
-        <LandingPage/>
-       : 
-        <DashboardPage/>
-      }
+    {user.userId ? <DashboardPage/> : <LandingPage/>}
     </>
     
 

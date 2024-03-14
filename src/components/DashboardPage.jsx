@@ -13,7 +13,7 @@ import {
   deleteDoc,
   doc,
 } from 'firebase/firestore';
-import { db } from '../firebaseConfig.js';
+// import { db } from '../firebaseConfig.js';
 
 
 const DashboardPage = () => {
