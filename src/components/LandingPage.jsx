@@ -1,11 +1,16 @@
 
 'use client'
-import Card from './Card';
+import Card from './LandingPageCarousel';
 import Footer from './Footer';
 import Header from './Header'
 import Hero from './LandingPage/Hero'
 import Navbar from './LandingPage/Navbar'
 import React, { useEffect, useState } from 'react';
+import Info from './Info';
+import LandingPageCarousel from './LandingPageCarousel';
+import Testimonials from './Testimonials';
+import Newsletter from './Newsletter';
+import News from './News';
 
 const LandingPage = () => {
   const [data, setData] = useState(null);
@@ -14,8 +19,11 @@ const LandingPage = () => {
   return (
     <div className='mx-auto'>
       <Navbar/>
-      <Hero />
-      <Card/>
+      <Hero/>
+      <Info/>
+      <News/>
+      <Testimonials/>
+      <Newsletter/>
       <Footer/>
     </div>
   )

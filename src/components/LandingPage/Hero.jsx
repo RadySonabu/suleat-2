@@ -36,8 +36,8 @@ const Hero = () => {
           <div className="">
             <Image
               src="/order-food.svg"
-              width="616"
-              height="617"
+              width="600"
+              height="600"
               alt="Hero Illustration"
             />
           </div>
